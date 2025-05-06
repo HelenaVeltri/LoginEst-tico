@@ -52,11 +52,14 @@
     </div>
     <script>
         function verificarLogin(){
+            
             const usuario = document.getElementById('usuario').value;
             const senha = document.getElementById('senha').value;
-            const msg =document.getElementById('mensagem');
+            const msg = document.getElementById('mensagem');
+
             console.log("Usuário:", usuario);
             console.log("Senha:", senha);
+            
             if (usuario&&senha){
                 msg.textContent = 'Bem vindo!'; //msg
             }else{
